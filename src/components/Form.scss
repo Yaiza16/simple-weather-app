@@ -9,7 +9,7 @@
 .input-container {
   position: relative;
   margin: 0.3rem 0 1.5rem;
-  height: 2.2rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@
   align-self: center;
   font-family: v.$f-secundary;
   font-size: v.$f-base-size;
-  background: linear-gradient(90deg, #3574e9 16%, #144eb8 69%);
+  background: linear-gradient(90deg, v.$c-blue 16%, v.$c-darkBlue 69%);
   color: v.$c-secundary;
   outline: none;
   border: 1px solid transparent;
