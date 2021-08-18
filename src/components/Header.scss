@@ -5,6 +5,7 @@
   font-weight: f.getWeight('light');
   text-transform: uppercase;
   margin-bottom: 2rem;
+  text-align: center;
 
   &__bold {
     font-weight: f.getWeight('bold');
