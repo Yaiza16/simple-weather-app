@@ -1,0 +1,5 @@
+@use 'variables' as v;
+
+@function getWeight($key){
+    @return map-get(v.$f-weight, $key)
+}
