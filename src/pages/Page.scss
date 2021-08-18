@@ -1,0 +1,11 @@
+.main-container {
+  width: 40rem;
+  height: 18rem;
+
+  background: rgba(35, 44, 51, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(101, 103, 122, 0.2);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

@@ -1,11 +1,12 @@
 @use '../styles/variables' as v;
 @use '../styles/functions' as f;
 
-.title-site{
-    font-weight: f.getWeight('light');
-    text-transform: uppercase;
+.title-site {
+  font-weight: f.getWeight('light');
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 
-    &__bold{
-        font-weight: f.getWeight('bold');
-    }
+  &__bold {
+    font-weight: f.getWeight('bold');
+  }
 }
