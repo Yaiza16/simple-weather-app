@@ -1,0 +1,55 @@
+@use './../styles/variables' as v;
+
+.form-location {
+  display: flex;
+  flex-direction: column;
+  font-family: v.$f-secundary;
+}
+
+.input-container {
+  position: relative;
+  margin: 0.3rem 0 1.5rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-location {
+  position: absolute;
+  padding-left: 1.5rem;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid v.$c-secundary;
+  border-radius: 0.1rem;
+  background-color: transparent;
+  transition: border 0.2s ease;
+  color: v.$c-secundary;
+  font-family: v.$f-secundary;
+  font-size: 1.2rem;
+
+  &:focus {
+    border-color: v.$c-blue;
+  }
+}
+
+.form-button {
+  padding: 0.4rem;
+  width: 50%;
+  border-radius: 0.8rem;
+  align-self: center;
+  font-family: v.$f-secundary;
+  font-size: v.$f-base-size;
+  background: linear-gradient(90deg, #3574e9 16%, #144eb8 69%);
+  color: v.$c-secundary;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: v.$c-secundary;
+  }
+}
