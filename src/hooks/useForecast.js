@@ -5,7 +5,7 @@ const BASE_URL_LATLON = 'https://api.openweathermap.org/data/2.5/forecast';
 const BASE_URL_FORECAST = 'https://api.openweathermap.org/data/2.5/onecall';
 
 const useForecast = () => {
-  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [errorData, setErrorData] = useState('');
 
@@ -20,6 +20,7 @@ const useForecast = () => {
       .catch((error) => {
         if (error.response.status === 404) {
           setIsError(true);
+          setIsLoading(false);
           setErrorData('There is not such location');
         }
       });
@@ -38,12 +39,13 @@ const useForecast = () => {
       .then(({ data }) => data)
       .catch(() => {
         setIsError(true);
+        setIsLoading(false);
         setErrorData('Some error happened');
       });
   };
 
   const submitRequest = async (location) => {
-    // Set isLoading (true)
+    setIsLoading(true);
     setIsError(false);
 
     const coord = await getLatLon(location);
@@ -54,7 +56,7 @@ const useForecast = () => {
     console.log(data);
   };
 
-  return { submitRequest, loading, setLoading, isError, errorData };
+  return { submitRequest, isLoading, isError, errorData };
 };
 
 export default useForecast;
