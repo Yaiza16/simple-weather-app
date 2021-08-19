@@ -25,24 +25,6 @@ const useForecast = () => {
       });
   };
 
-  // const getForecast = async (latLon) => {
-  //   const exludeParams = 'current,minutely,hourly';
-  //   const { data } = await axios(BASE_URL_FORECAST, {
-  //     params: {
-  //       lat: latLon.lat,
-  //       lon: latLon.lon,
-  //       exclude: exludeParams,
-  //       appid: process.env.REACT_APP_API_KEY
-  //     }
-  //   });
-
-  //   if (!data || data.lenght === 0) {
-  //     /* Set error */
-  //     return {}; // Function should consistently return the same type
-  //   }
-  //   return data;
-  // };
-
   const getForecast = async (latLon) => {
     const exludeParams = 'current,minutely,hourly';
     await axios(BASE_URL_FORECAST, {
