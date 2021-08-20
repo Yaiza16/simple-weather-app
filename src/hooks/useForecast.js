@@ -67,6 +67,7 @@ const useForecast = () => {
     const data = await getForecast(coord);
 
     forecastData(data);
+    setIsError(true);
   };
 
   return { submitRequest, isLoading, isError, errorData, forecast };
