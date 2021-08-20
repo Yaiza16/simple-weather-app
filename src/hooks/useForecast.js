@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import getCurrentDayData from '../helpers/getCurrentDayData';
+import getUpcomingDaysData from '../helpers/getUpcomingDaysData';
 
 const BASE_URL_LATLON = 'https://api.openweathermap.org/data/2.5/forecast';
 const BASE_URL_FORECAST = 'https://api.openweathermap.org/data/2.5/onecall';
@@ -9,6 +10,7 @@ const useForecast = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [errorData, setErrorData] = useState('');
+  const [forecast, setForecast] = useState(null);
 
   const getLatLon = async (location) => {
     let coord = null;
@@ -50,20 +52,24 @@ const useForecast = () => {
     return response;
   };
 
+  const forecastData = (data) => {
+    const currentDayData = getCurrentDayData(data);
+    const upcomingDaysData = getUpcomingDaysData(data);
+    setForecast({ currentDayData, upcomingDaysData });
+  };
+
   const submitRequest = async (location) => {
     setIsLoading(true);
     setIsError(false);
 
     const coord = await getLatLon(location);
-    // console.log(isError);
     if (!coord) return;
     const data = await getForecast(coord);
 
-    console.log(data);
-    console.log(getCurrentDayData(data));
+    forecastData(data);
   };
 
-  return { submitRequest, isLoading, isError, errorData };
+  return { submitRequest, isLoading, isError, errorData, forecast };
 };
 
 export default useForecast;
