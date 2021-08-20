@@ -16,7 +16,7 @@ const getCurrentDayData = (data) => ({
   location: data.timezone.split('/')[1],
   date: moment(new Date(data.daily[0].dt * 1000)).format('dddd'),
   temp: data.daily[0].temp.day, // Kelvin
-  tempMax: data.daily[0].temp.max,
+  tempMax: Number(data.daily[0].temp.max) - 271.15,
   tempMin: data.daily[0].temp.min,
   pop: data.daily[0].pop, // probability of precipitation
   windSpeed: data.daily[0].wind_speed,

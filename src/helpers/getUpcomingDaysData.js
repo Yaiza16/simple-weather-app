@@ -9,8 +9,8 @@ const upcomingDaysDataOrganization = (data) => ({
     .split(',')[0]
     .substr(0, 5),
   temp: data.temp.day,
-  tempMax: data.temp.max,
-  tempMin: data.temp.min
+  tempMax: Math.round(Number(data.temp.max) - 271.15),
+  tempMin: Math.round(Number(data.temp.min) - 271.15)
 });
 
 // const getUpcomingDaysData = (data) => {
