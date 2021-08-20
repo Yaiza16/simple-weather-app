@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Form.scss';
-import { IconLocation } from './helpers/Icons';
+import { IconLocation } from '../helpers/Icons';
 
 const Form = ({ submitRequest }) => {
   const [location, setLocation] = useState('');
