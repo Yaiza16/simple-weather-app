@@ -10,7 +10,7 @@ const upcomingDaysDataOrganization = (data) => ({
     .substr(0, 5),
   temp: data.temp.day,
   tempMax: data.temp.max,
-  tempMix: data.temp.min
+  tempMin: data.temp.min
 });
 
 // const getUpcomingDaysData = (data) => {
