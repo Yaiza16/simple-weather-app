@@ -1,0 +1,11 @@
+@use '../../styles/variables' as v;
+
+.upcoming-days-container {
+  height: 100%;
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-between;
+  background-color: v.$c-grayOpacity;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,35 @@
+@use '../../styles/variables' as v;
+
+.upcoming-day-container {
+  // display: flex;
+  justify-content: left;
+  align-items: center;
+  // gap: 0.5rem;
+}
+
+.upcoming-day-date {
+  display: flex;
+  flex-direction: column;
+  font-family: v.$f-secundary;
+  justify-content: center;
+  align-items: center;
+}
+
+.upcoming-day-name {
+  font-size: 1rem;
+}
+
+.upcoming-day-number {
+  font-size: 0.8rem;
+  color: v.$c-lightGray;
+}
+
+.upcoming-temp {
+  display: flex;
+  font-size: 0.8rem;
+  justify-content: center;
+
+  &__min {
+    color: v.$c-lightGray;
+  }
+}
