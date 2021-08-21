@@ -2,7 +2,7 @@ import React from 'react';
 import './iconsWeater.scss';
 
 const IconsWeater = () => (
-  <div>
+  <div className="icon-weather-container">
     <svg
       version="1.1"
       id="sunFill"
