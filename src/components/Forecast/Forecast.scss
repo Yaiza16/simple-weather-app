@@ -1,5 +1,14 @@
 @use '../../styles/variables' as v;
 
+.current-day-container {
+  background-color: v.$c-grayOpacity;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .upcoming-days-container {
   height: 100%;
   display: flex;
