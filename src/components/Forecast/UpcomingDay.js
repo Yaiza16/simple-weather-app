@@ -19,7 +19,8 @@ const UpcomingDay = ({ day }) => {
           <span>&#176;</span>
         </p>
         <p className="upcoming-temp__min">
-          / {day.tempMin} <span>&#176;</span>
+          / {day.tempMin}
+          <span>&#176;</span>
         </p>
       </div>
     </div>
