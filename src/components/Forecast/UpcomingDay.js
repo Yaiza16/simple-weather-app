@@ -1,8 +1,11 @@
 import React from 'react';
-import IconsWeater from '../vendors/iconsWeather/IconsWeater';
+// import IconsWeater from '../vendors/iconsWeather/IconsWeater';
 import './UpcomingDay.scss';
+import IconsWeather from '../vendors/iconsWeather/IconsWeather';
 
 const UpcomingDay = ({ day }) => {
+  const weatherIcon = day.weather.replace(' ', '').toLowerCase();
+
   console.log(day);
   return (
     <div key={day.date} className="upcoming-day-container">
@@ -11,7 +14,8 @@ const UpcomingDay = ({ day }) => {
         <p className="upcoming-day-number">{day.date}</p>
       </div>
       <div className="upcoming-icon-container">
-        <IconsWeater />
+        {/* <IconsWeater /> */}
+        {IconsWeather[weatherIcon]()}
       </div>
       <div className="upcoming-temp">
         <p className="upcoming-temp__max">
