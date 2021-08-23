@@ -1,5 +1,9 @@
 @use '../../styles/variables' as v;
 
+.forecast-container {
+  position: relative;
+}
+
 .current-day-container {
   background-color: v.$c-grayOpacity;
   padding: 0.5rem;

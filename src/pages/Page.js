@@ -8,8 +8,15 @@ import Loading from '../components/vendors/loading/Loading';
 import Forecast from '../components/Forecast/Forecast';
 
 const Page = () => {
-  const { submitRequest, isLoading, isError, errorData, forecast } =
-    useForecast();
+  const {
+    submitRequest,
+    isLoading,
+    isError,
+    errorData,
+    forecast,
+    setForecast,
+    setIsLoading
+  } = useForecast();
   return (
     <div>
       <Header />
@@ -22,7 +29,11 @@ const Page = () => {
       )}
       {forecast && (
         <div className="main-container main-container--weather">
-          <Forecast forecast={forecast} />
+          <Forecast
+            forecast={forecast}
+            setForecast={setForecast}
+            setIsLoading={setIsLoading}
+          />
         </div>
       )}
     </div>

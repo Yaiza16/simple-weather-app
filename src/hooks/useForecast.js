@@ -70,7 +70,15 @@ const useForecast = () => {
     setIsError(true);
   };
 
-  return { submitRequest, isLoading, isError, errorData, forecast };
+  return {
+    submitRequest,
+    isLoading,
+    setIsLoading,
+    isError,
+    errorData,
+    forecast,
+    setForecast
+  };
 };
 
 export default useForecast;
