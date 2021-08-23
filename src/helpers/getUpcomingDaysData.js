@@ -10,7 +10,8 @@ const upcomingDaysDataOrganization = (data) => ({
     .substr(0, 5),
   temp: data.temp.day,
   tempMax: Math.round(Number(data.temp.max) - 271.15),
-  tempMin: Math.round(Number(data.temp.min) - 271.15)
+  tempMin: Math.round(Number(data.temp.min) - 271.15),
+  weather: data.weather[0].main
 });
 
 // const getUpcomingDaysData = (data) => {
