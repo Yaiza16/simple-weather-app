@@ -22,7 +22,7 @@ const getCurrentDayData = (data) => ({
   humidity: data.daily[0].humidity,
   pressure: data.daily[0].pressure,
   windSpeed: data.daily[0].wind_speed,
-  weather: data.daily[0].weather[0].description
+  weather: data.daily[0].weather[0].main
 });
 
 export default getCurrentDayData;
