@@ -5,16 +5,10 @@ import './CurrentDay.scss';
 
 const CurrentDay = ({ forecast }) => {
   const weatherIcon = forecast.weather.replace(' ', '').toLowerCase();
+  // Add useState with weatherIcon
+
   console.log(weatherIcon);
-  // const icons = IconsWeather;
-  // console.log(icons);
-  // console.log(IconsWeather[weatherIcon]);
 
-  // const { mist } = IconsWeather;
-  // const mistT = mist();
-  // console.log(mistT);
-
-  // console.log(IconsWeather.mist);
   return (
     <>
       <div className="current-day-main">
