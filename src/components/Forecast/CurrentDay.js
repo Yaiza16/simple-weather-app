@@ -1,6 +1,5 @@
 import React from 'react';
-// import IconsWeater from '../vendors/iconsWeather/IconsWeater';
-import IconsWeather from '../vendors/iconsWeather/IconsWeather';
+import IconsWeather from '../../helpers/Icons';
 import './CurrentDay.scss';
 
 const CurrentDay = ({ forecast }) => {

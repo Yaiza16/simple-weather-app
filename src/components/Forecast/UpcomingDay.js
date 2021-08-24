@@ -1,7 +1,6 @@
 import React from 'react';
-// import IconsWeater from '../vendors/iconsWeather/IconsWeater';
 import './UpcomingDay.scss';
-import IconsWeather from '../vendors/iconsWeather/IconsWeather';
+import IconsWeather from '../../helpers/Icons';
 
 const UpcomingDay = ({ day }) => {
   const weatherIcon = day.weather.replace(' ', '').toLowerCase();
