@@ -12,7 +12,7 @@ const Forecast = ({ forecast, setForecast, setIsLoading }) => (
     </div>
     <div className="upcoming-days-container">
       {forecast.upcomingDaysData.map((day) => (
-        <UpcomingDay day={day} />
+        <UpcomingDay day={day} key={day.date} />
       ))}
     </div>
   </div>

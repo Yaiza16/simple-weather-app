@@ -6,7 +6,7 @@ const UpcomingDay = ({ day }) => {
   const weatherIcon = day.weather.replace(' ', '').toLowerCase();
 
   return (
-    <div key={day.date} className="upcoming-day-container">
+    <div className="upcoming-day-container">
       <div className="upcoming-day-date">
         <p className="upcoming-day-name">{day.day}</p>
         <p className="upcoming-day-number">{day.date}</p>
