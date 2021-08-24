@@ -1,6 +1,11 @@
 @use '../styles/variables' as v;
 @use '../styles/functions' as f;
 
+.title-site-link {
+  text-decoration: none;
+  color: v.$c-secundary;
+}
+
 .title-site {
   font-weight: f.getWeight('light');
   text-transform: uppercase;

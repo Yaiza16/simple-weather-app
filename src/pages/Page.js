@@ -19,7 +19,7 @@ const Page = () => {
   } = useForecast();
   return (
     <div>
-      <Header />
+      <Header setForecast={setForecast} setIsLoading={setIsLoading} />
       {!forecast && (
         <div className="main-container">
           {!isLoading && <Form submitRequest={submitRequest} />}
