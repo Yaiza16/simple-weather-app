@@ -14,16 +14,6 @@ const upcomingDaysDataOrganization = (data) => ({
   weather: data.weather[0].main
 });
 
-// const getUpcomingDaysData = (data) => {
-//   // for (let i = 1; i < data.daily.length; i++) {
-//   //   data.daily[i].map((day) => {
-//   //     const dayItem = upcomingDaysDataOrganization(day);
-//   //     dayItem.push(upcomingDaysData);
-//   //     return upcomingDaysData;
-//   //   });
-//   }
-// };
-
 const getUpcomingDaysData = (data) => {
   const upcomingDayData = data.daily.map((day) =>
     upcomingDaysDataOrganization(day)

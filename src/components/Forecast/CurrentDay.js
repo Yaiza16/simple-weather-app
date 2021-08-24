@@ -4,9 +4,6 @@ import './CurrentDay.scss';
 
 const CurrentDay = ({ forecast }) => {
   const weatherIcon = forecast.weather.replace(' ', '').toLowerCase();
-  // Add useState with weatherIcon
-
-  console.log(weatherIcon);
 
   return (
     <>
@@ -17,10 +14,7 @@ const CurrentDay = ({ forecast }) => {
           {forecast.temp}
           <span className="current-day-temp__symbol">&#176;</span>
         </p>
-        <div className="icon-container">
-          {/* {IconsWeather.clouds()} */}
-          {IconsWeather[weatherIcon]()}
-        </div>
+        <div className="icon-container">{IconsWeather[weatherIcon]()}</div>
         <p className="current-day-weather">{forecast.weather}</p>
       </div>
 

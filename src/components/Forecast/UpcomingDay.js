@@ -5,7 +5,6 @@ import IconsWeather from '../../helpers/Icons';
 const UpcomingDay = ({ day }) => {
   const weatherIcon = day.weather.replace(' ', '').toLowerCase();
 
-  console.log(day);
   return (
     <div key={day.date} className="upcoming-day-container">
       <div className="upcoming-day-date">
@@ -13,7 +12,6 @@ const UpcomingDay = ({ day }) => {
         <p className="upcoming-day-number">{day.date}</p>
       </div>
       <div className="upcoming-icon-container">
-        {/* <IconsWeater /> */}
         {IconsWeather[weatherIcon]()}
       </div>
       <div className="upcoming-temp">
