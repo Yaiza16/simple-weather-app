@@ -1,8 +1,9 @@
 # SIMPLE WEATHER APP
 
 <div  align="center">
-<h3>
+<h2>
 <a  href="https://simple-weather-app-yv.netlify.app/">Live</a>
+</div>
 
 ## Preview
 
