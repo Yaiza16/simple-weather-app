@@ -4,9 +4,10 @@
 
 <h2>
 <a  href="https://simple-weather-app-yv.netlify.app/">Live site</a>
-</div>
 
 ![Preview image](./design/preview.gif)
+
+</div>
 
 ## Challenge's description
 
