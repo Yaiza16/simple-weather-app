@@ -1,8 +1,12 @@
 # SIMPLE WEATHER APP
 
+<div  align="center">
+<h3>
+<a  href="https://simple-weather-app-yv.netlify.app/">Live</a>
+
 ## Preview
 
-![Preview image](/design/preview.mp4)
+![Preview image](./design/preview.gif)
 
 ## Challenge's description
 
