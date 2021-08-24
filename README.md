@@ -4,6 +4,8 @@
 
 <h2>
 <a  href="https://simple-weather-app-yv.netlify.app/">Live site</a>
+</div><br>
+<div  align="center">
 
 ![Preview image](./design/preview.gif)
 
